@@ -1,0 +1,35 @@
+.nav-color{
+background-color: rgb(255,255,255) !important;
+}
+
+.ts.slate .image{
+position: static; !important;
+}
+
+.top-header{
+padding:5px !important;
+background-color: rgb(65, 65, 65)!important;
+}
+
+.med-header{
+padding:1em !important;
+background-color: rgb(65, 65, 65)!important;
+height:100%;
+}
+
+.white{
+color: rgb(220,220,220) !important;
+}
+
+.middle{
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.padded-top {
+padding-top:3em !important;
+}
+
+.full-width{
+width:100%;
+}
