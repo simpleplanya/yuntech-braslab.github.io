@@ -9,8 +9,8 @@ new Vue({
 	var url = "https://yuntech-braslab.github.io/xmlhttp/annolist.txt";
 	xmlhttp.onreadystatechange = function() {
 	    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-		self.annolist = [JSON.parse(xmlhttp.responseText)];
-		console.log(self.annolist)
+		self.annolist = xmlhttp.responseText;
+		console.log(JSON.parse(self.annolist));
 		}
 	};
 	xmlhttp.open("GET", url, true);
