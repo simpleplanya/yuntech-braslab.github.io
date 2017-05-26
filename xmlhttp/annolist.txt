@@ -1,4 +1,4 @@
-{{title: 'fdlksfjlkjf;sjflksjflkasjslakfjaslkjaslkjaslfjalkafs'},
+[{title: 'fdlksfjlkjf;sjflksjflkasjslakfjaslkjaslkjaslfjalkafs'},
 {title: 'fdlksfjlkjf;sjflksjflkasjslakfjaslkjaslkjaslfjalkafs'},
 {title: 'fdlksfjlkjf;sjflksjflkasjslakfjaslkjaslkjaslfjalkafs'},
 {title: 'fdlksfjlkjf;sjflksjflkasjslakfjaslkjaslkjaslfjalkafs'},
@@ -7,4 +7,4 @@
 {title: 'fdlksfjlkjf;sjflksjflkasjslakfjaslkjaslkjaslfjalkafs'},
 {title: 'fdlksfjlkjf;sjflksjflkasjslakfjaslkjaslkjaslfjalkafs'},
 {title: 'fdlksfjlkjf;sjflksjflkasjslakfjaslkjaslkjaslfjalkafs'},
-{title: 'fdlksfjlkjf;sjflksjflkasjslakfjaslkjaslkjaslfjalkafs'}}
+{title: 'fdlksfjlkjf;sjflksjflkasjslakfjaslkjaslkjaslfjalkafs'}]
