@@ -9,7 +9,7 @@ Vue.component('component-anno-list',{
 	var url = "xmlhttp/annolist.txt";
 	xmlhttp.onreadystatechange = function() {
 	    if (this.readyState == 4 && this.status == 200) {
-				this.annolist = response.body; 
+				this.annolist = this.response.body; 
 		    }
 	};
 	xmlhttp.open("GET", url, true);
