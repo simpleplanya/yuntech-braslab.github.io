@@ -7,10 +7,10 @@
 
 		<link rel="stylesheet" href="./static/css/tocas.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-
 		<link rel="stylesheet" href="./static/css/main.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	</head>
 	<body>
+		<div id="app">
 		<header class="ts fluid horizontally fitted heading slate top-header">
 		</header>
 		<nav class="nav-color ts horizontally scrollable large fluid borderless pure basic menu">
@@ -51,20 +51,12 @@
 			<div class="ts relaxed stackable grid">
 				<div class="twelve wide column">
 					<div class="padded-top">
-					<h4 class="ts dividing header">近期公告</h4>
-					<div class="ts bulleted list">
-						<div class="item">仂畟衩眽姩魙痻皵奻妀姶抏呴阹芑摀乇岥蜛趎</div>
-						<div class="item">莔一昦逡絒傿乜榼壂丮，淽乇恅偲棈瑀屮敳仉仩</div>
-						<div class="item">閈一邾裉睄跱兀綝螜丏，軡屮苕裀棔楂亍漊亓刉</div>
-						<div class="item">仂畟衩眽姩魙痻皵奻妀姶抏呴阹芑摀乇岥蜛趎</div>
-						<div class="item">莔一昦逡絒傿乜榼壂丮，淽乇恅偲棈瑀屮敳仉仩</div>
-						<div class="item">閈一邾裉睄跱兀綝螜丏，軡屮苕裀棔楂亍漊亓刉</div>
-						<div class="item">仂畟衩眽姩魙痻皵奻妀姶抏呴阹芑摀乇岥蜛趎</div>
-						<div class="item">莔一昦逡絒傿乜榼壂丮，淽乇恅偲棈瑀屮敳仉仩</div>
-						<div class="item">閈一邾裉睄跱兀綝螜丏，軡屮苕裀棔楂亍漊亓刉</div>
-						<div class="item">仂畟衩眽姩魙痻皵奻妀姶抏呴阹芑摀乇岥蜛趎</div>
-						<div class="item">莔一昦逡絒傿乜榼壂丮，淽乇恅偲棈瑀屮敳仉仩</div>
-					</div>
+						<h4 class="ts dividing header">近期公告</h4>
+						<component-anno-list inline-template>
+						<div class="ts bulleted list">
+							<div class="item" v-for="item in annolist" >{{ item.title }} </div>
+						</div>
+						</component-anno-list>
 					</div>
 				</div>
 				<div class="four wide column">
@@ -73,5 +65,8 @@
 		</div>
 		<footer class="ts med-header very padded horizontally fitted fluid secondary segment">
 		</footer>
+		</div>
 	</body>
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<script src="./static/js/main.js"></script>
 </html>
