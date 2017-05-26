@@ -6,11 +6,10 @@ new Vue({
 	mounted: function ()	{
 	var self = this;
 	var xmlhttp = new XMLHttpRequest();
-	var url = "xmlhttp/annolist.txt";
+	var url = "https://yuntech-braslab.github.io/xmlhttp/annolist.txt";
 	xmlhttp.onreadystatechange = function() {
-	    if (this.readyState == 4 && this.status == 200) {
-		self.annolist = self.responseText;
-		console.log(self.annolist)
+	    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+		self.annolist = xmlhttp.responseText;
 		}
 	};
 	xmlhttp.open("GET", url, true);
