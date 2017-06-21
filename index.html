@@ -6,6 +6,8 @@
 		<title>BRAS Lab</title>
 
 		<link rel="stylesheet" href="./static/css/tocas.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="./static/css/ideal-image-slider.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="./static/css/ideal-image-slider-theme.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 		<link rel="stylesheet" href="./static/css/main.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	</head>
@@ -51,9 +53,10 @@
 		</header>
 		<div class="ts narrow container" style="min-height:75vh;">
 			<div class="ts segment" style="min-height:75vh; height:100%;">
+				<br>
 			<div class="ts relaxed stackable grid">
-				<div class="twelve wide column">
-					<div class="padded-top">
+				<div class="eleven wide column">
+					<div >
 						<h4 class="ts dividing header">最新公告</h4>
 						<div class="ts bulleted list">
 							<div class="item" v-for="item in annolist" >{{ item.title }} </div>
@@ -64,6 +67,14 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="five wide column">
+						<h4 class="ts dividing header">圖片輪放</h4>
+			<div id="slider">
+					<img src="http://140.125.45.144/BRASLab_Web/images/p1.jpg" alt="Minimum required attributes">
+					<img src="./static/image/teacher1.jpg" alt="Use data-src for on-demand loading">
+			</div>
+			</div>
 				</div>
 			</div>
 			<div class="ts relaxed stackable grid">
@@ -75,4 +86,12 @@
 	</body>
 	<script src="https://unpkg.com/vue/dist/vue.js"></script>
 	<script src="./static/js/main.js"></script>
+	<script src="./static/js/ideal-image-slider.min.js"></script>
+	<script>
+var slider = new IdealImageSlider.Slider({
+	selector: '#slider',
+	interval: 4000
+});
+slider.start();
+</script>
 </html>
