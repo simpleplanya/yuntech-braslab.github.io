@@ -16,13 +16,15 @@
 		<nav class="nav-color ts horizontally scrollable large fluid borderless pure basic menu">
 			<div class="ts narrow container">
 				<a class="active item" href="/">首頁</a>
-				<a class="item" href="/">關於Lab</a>
-				<a class="item" href="/">指導老師</a>
-				<a class="item" href="/">研究團隊</a>
-				<a class="item" href="/">研究成果</a>
+				<a class="item" href="./lab.html">關於Lab</a>
+				<a class="item" href="./techer.html">指導老師</a>
+				<a class="item" href="./group.html">研究團隊</a>
+				<a class="item" href="./result.html">研究成果</a>
+				<a class="item" href="./contact.html">聯絡我們</a>
 				<div class="right menu">
-					<a class="item" href="http://github.com/Yuntech-BRASLab">Github</a>
-					<a class="item" href="/logout">聯絡我們</a>
+					<a class="item" href="http://www.csie.yuntech.edu.tw/">資工系網</a>
+					<a class="item" href="http://www.yuntech.edu.tw/">雲科大首頁</a>
+					<a class="item" href="http://github.com/Yuntech-BRASLab">GitHub</a>
 				</div>
 			</div>
 		</nav>
@@ -48,17 +50,23 @@
 			</div>
 		</header>
 		<div class="ts narrow container" style="min-height:75vh;">
+			<div class="ts segment" style="min-height:75vh; height:100%;">
 			<div class="ts relaxed stackable grid">
 				<div class="twelve wide column">
 					<div class="padded-top">
-						<h4 class="ts dividing header">近期公告</h4>
+						<h4 class="ts dividing header">最新公告</h4>
 						<div class="ts bulleted list">
 							<div class="item" v-for="item in annolist" >{{ item.title }} </div>
 						</div>
+						<h4 class="ts dividing header">課程訊息</h4>
+						<div class="ts bulleted list">
+							<div class="item" v-for="item in classlist" >{{ item.title }} </div>
+						</div>
 					</div>
 				</div>
-				<div class="four wide column">
 				</div>
+			</div>
+			<div class="ts relaxed stackable grid">
 			</div>
 		</div>
 		<footer class="ts med-header very padded horizontally fitted fluid secondary segment">

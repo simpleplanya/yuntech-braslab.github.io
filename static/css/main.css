@@ -33,3 +33,21 @@ padding-top:3em !important;
 .full-width{
 width:100%;
 }
+.padd {
+padding:2em !important;
+}
+.nomg {
+margin:0em 0em 0em 0em !important;
+}
+.nopd {
+padding:0px !important;
+}
+.mgsub {
+margin:0.5em 0em 1.5em 0.2em !important;
+}
+
+p {
+font-size: 15px;
+line-height: 25px;　
+
+}
