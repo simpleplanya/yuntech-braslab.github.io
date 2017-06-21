@@ -4,84 +4,95 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<title>BRAS Lab</title>
-
-		<link rel="stylesheet" href="./static/css/tocas.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.2/tocas.css">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 		<link rel="stylesheet" href="./static/css/ideal-image-slider.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		<link rel="stylesheet" href="./static/css/ideal-image-slider-theme.css" type="text/css" media="screen" title="no title" charset="utf-8">
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 		<link rel="stylesheet" href="./static/css/main.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	</head>
 	<body>
 		<div id="app">
-		<header class="ts fluid horizontally fitted heading slate top-header">
-		</header>
-		<nav class="nav-color ts horizontally scrollable large fluid borderless pure basic menu">
-			<div class="ts narrow container">
-				<a class="active item" href="/">首頁</a>
-				<a class="item" href="./lab.html">關於Lab</a>
-				<a class="item" href="./techer.html">指導老師</a>
-				<a class="item" href="./group.html">研究團隊</a>
-				<a class="item" href="./result.html">研究成果</a>
-				<a class="item" href="./contact.html">聯絡我們</a>
-				<div class="right menu">
-					<a class="item" href="http://www.csie.yuntech.edu.tw/">資工系網</a>
-					<a class="item" href="http://www.yuntech.edu.tw/">雲科大首頁</a>
-					<a class="item" href="http://github.com/Yuntech-BRASLab">GitHub</a>
-				</div>
-			</div>
-		</nav>
-		<header class="ts huge fluid horizontally fitted padded heading left-align slate med-header">
-			<div class="ts narrow container">
-				<div class="ts grid">
-					<div class="thirteen wide column">
-						<div class="middle">
-							<span class="white header">
-								BRASLab
-							</span>
-							<br>
-							<span class="description">
-								語音辨識.深度語言學習.無線收發
-							</span>
-						</div>
+			<header class="ts fluid horizontally fitted heading slate top-header">
+			</header>
+			<nav class="nav-color ts horizontally scrollable large fluid borderless pure basic menu">
+				<div class="ts narrow container">
+					<a class="active item" href="/">首頁</a>
+					<a class="item" href="./lab.html">關於Lab</a>
+					<a class="item" href="./techer.html">指導老師</a>
+					<a class="item" href="./group.html">研究團隊</a>
+					<a class="item" href="./result.html">研究成果</a>
+					<a class="item" href="./contact.html">聯絡我們</a>
+					<div class="right menu">
+						<a class="item" href="http://www.csie.yuntech.edu.tw/">資工系網</a>
+						<a class="item" href="http://www.yuntech.edu.tw/">雲科大首頁</a>
+						<a class="item" href="http://github.com/Yuntech-BRASLab">GitHub</a>
 					</div>
-					<div class="three wide column" style="height:100%;">
+				</div>
+			</nav>
+			<header class="ts huge fluid horizontally fitted padded heading left-align slate med-header">
+				<div class="ts narrow container">
+					<div class="ts grid">
+						<div class="thirteen wide column">
+							<div class="middle">
+								<span class="white header">
+									BRASLab
+								</span>
+								<span class="description">
+									語音辨識.深度語言學習.無線收發
+								</span>
+							</div>
+						</div>
+						<div class="three wide column" style="height:13vh;">
 
-						<img class="ts small image" src="./static/image/Untitled.png">
-					</div>
-				</div>
-			</div>
-		</header>
-		<div class="ts narrow container" style="min-height:75vh;">
-			<div class="ts segment" style="min-height:75vh; height:100%;">
-				<br>
-			<div class="ts relaxed stackable grid">
-				<div class="eleven wide column">
-					<div >
-						<h4 class="ts dividing header">最新公告</h4>
-						<div class="ts bulleted list">
-							<div class="item" v-for="item in annolist" >{{ item.title }} </div>
-						</div>
-						<h4 class="ts dividing header">課程訊息</h4>
-						<div class="ts bulleted list">
-							<div class="item" v-for="item in classlist" >{{ item.title }} </div>
+							<img class="ts small image" src="./static/image/Untitled.png">
 						</div>
 					</div>
 				</div>
+			</header>
+			<div class="ts narrow container" style="min-height:75vh;">
+				<div class="ts segment" style="min-height:75vh; height:100%;">
+					<br>
+					<div class="ts relaxed stackable grid">
+						<div class="eleven wide column">
+							<div >
+								<h4 class="ts dividing header">最新公告</h4>
+								<div class="ts bulleted list">
+									<div class="item" v-for="item in annolist" >{{ item.title }} </div>
+								</div>
+								<h4 class="ts dividing header">課程訊息</h4>
+								<div class="ts bulleted list">
+									<div class="item" v-for="item in classlist" >{{ item.title }} </div>
+								</div>
+							</div>
+						</div>
 
-				<div class="five wide column">
-						<h4 class="ts dividing header">圖片輪放</h4>
-			<div id="slider">
-					<img src="http://140.125.45.144/BRASLab_Web/images/p1.jpg" alt="Minimum required attributes">
-					<img src="./static/image/teacher1.jpg" alt="Use data-src for on-demand loading">
-			</div>
-			</div>
+						<div class="five wide column">
+							<h4 class="ts dividing header">圖片輪放</h4>
+							<div id="slider">
+								<img src="http://140.125.45.144/BRASLab_Web/images/p1.jpg" alt="Minimum required attributes">
+								<img src="./static/image/teacher1.jpg" alt="Use data-src for on-demand loading">
+							</div>
+
+							<a class="ts warning card">
+
+								<div class="content">
+									<div class="header">教學影片</div>
+									<div class="meta"><div>線上教學影片</div></div>
+									<div class="describle">點擊此按鈕以觀看</div>
+								</div>
+								<div class="symbol">
+								<i class="user icon"></i>
+								</div>
+							</a>
+						</div>
+
+					</div>
+				</div>
+				<div class="ts relaxed stackable grid">
 				</div>
 			</div>
-			<div class="ts relaxed stackable grid">
-			</div>
-		</div>
-		<footer class="ts med-header very padded horizontally fitted fluid secondary segment">
-		</footer>
+			<footer class="ts med-header very padded horizontally fitted fluid secondary segment">
+			</footer>
 		</div>
 	</body>
 	<script src="https://unpkg.com/vue/dist/vue.js"></script>
@@ -90,8 +101,9 @@
 	<script>
 var slider = new IdealImageSlider.Slider({
 	selector: '#slider',
+	height: 200,
 	interval: 4000
 });
 slider.start();
-</script>
+	</script>
 </html>
