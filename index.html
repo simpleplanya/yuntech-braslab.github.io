@@ -56,7 +56,7 @@
 							<div >
 								<h4 class="ts dividing header">最新公告</h4>
 								<div class="ts bulleted list">
-									<div class="item" v-for="item in annolist" >{{ item.title }} </div>
+									<div class="item" v-for="item in annolist" ><a :onclick=" 'ts(#' + item.url + ').modal(' + 'show' + ')' ">{{ item.title }} </a></div>
 								</div>
 								<h4 class="ts dividing header">課程訊息</h4>
 								<div class="ts bulleted list">
@@ -64,6 +64,21 @@
 								</div>
 							</div>
 						</div>
+		<div v-for="item in annolist" class="ts modals dimmer" :id="item.url">
+			<dialog id="closableModal" class="ts closable tiny modal">
+			<div class="content">
+				<p>{{item.content}}</p>
+			</div>
+			<div class="actions">
+				<button class="ts deny button">
+					不
+				</button>
+				<button class="ts positive button">
+					是的
+				</button>
+			</div>
+			</dialog>
+		</div>
 
 						<div class="five wide column">
 							<h4 class="ts dividing header">圖片輪放</h4>
@@ -107,6 +122,7 @@
 		</div>
 	</body>
 	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.2/tocas.js"></script>
 	<script src="./static/js/main.js"></script>
 	<script src="./static/js/ideal-image-slider.min.js"></script>
 	<script>
