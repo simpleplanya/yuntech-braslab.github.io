@@ -60,13 +60,18 @@
 									<i class="dropdown icon"></i> {{ item.title }}
 									</summary>
 									<div class="content">
-										<p>夏希是一個基於 PHP 的時間類別，用以取得現在的時間，或者是數天後的現在時刻。</p>
+										<p>{{item.content}}</p>
 									</div>
 								</details>
 								<h4 class="ts dividing header">課程訊息</h4>
-								<div class="ts bulleted list">
-									<div class="item" v-for="item in classlist" >{{ item.title }} </div>
-								</div>
+								<details class="ts accordion" v-for="item in classlist" >
+									<summary>
+									<i class="dropdown icon"></i> {{ item.title }}
+									</summary>
+									<div class="content">
+										<p>{{item.content}}</p>
+									</div>
+								</details>
 							</div>
 						</div>
 
