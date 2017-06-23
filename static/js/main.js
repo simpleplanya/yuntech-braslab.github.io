@@ -8,7 +8,7 @@ new Vue({
 	var self = this;
 	var xmlhttp = new XMLHttpRequest();
 	var url = "https://yuntech-braslab.github.io/xmlhttp/annolist.txt";
-	var classurl = "https://yuntech-braslab.github.io/xmlhttp/annolist.txt";
+	var classurl = "https://yuntech-braslab.github.io/xmlhttp/classlist.txt";
 	xmlhttp.onreadystatechange = function() {
 	    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 		self.annolist = JSON.parse(xmlhttp.responseText);

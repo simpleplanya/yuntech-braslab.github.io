@@ -55,30 +55,20 @@
 						<div class="eleven wide column">
 							<div >
 								<h4 class="ts dividing header">最新公告</h4>
-								<div class="ts bulleted list">
-									<div class="item" v-for="item in annolist" ><a :onclick=" 'ts(#' + item.url + ').modal(' + 'show' + ')' ">{{ item.title }} </a></div>
-								</div>
+								<details class="ts accordion" v-for="item in annolist" >
+									<summary>
+									<i class="dropdown icon"></i> {{ item.title }}
+									</summary>
+									<div class="content">
+										<p>夏希是一個基於 PHP 的時間類別，用以取得現在的時間，或者是數天後的現在時刻。</p>
+									</div>
+								</details>
 								<h4 class="ts dividing header">課程訊息</h4>
 								<div class="ts bulleted list">
 									<div class="item" v-for="item in classlist" >{{ item.title }} </div>
 								</div>
 							</div>
 						</div>
-		<div v-for="item in annolist" class="ts modals dimmer" :id="item.url">
-			<dialog id="closableModal" class="ts closable tiny modal">
-			<div class="content">
-				<p>{{item.content}}</p>
-			</div>
-			<div class="actions">
-				<button class="ts deny button">
-					不
-				</button>
-				<button class="ts positive button">
-					是的
-				</button>
-			</div>
-			</dialog>
-		</div>
 
 						<div class="five wide column">
 							<h4 class="ts dividing header">圖片輪放</h4>
